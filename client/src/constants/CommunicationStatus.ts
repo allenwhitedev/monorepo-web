@@ -1,0 +1,1 @@
+export type CommunicationStatus = 'Pending' | 'Fail' | 'Success'
