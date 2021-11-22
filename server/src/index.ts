@@ -1,13 +1,11 @@
 import cors from 'cors'
 import express, { Response } from 'express'
 import moment from 'moment'
-import mongodb, { Collection, Db, MongoClient } from 'mongodb'
+import { IS_PRODUCTION_ENV } from './constants/IS_PRODUCTION_ENV'
 import { collections, connectToDatabase } from './db'
 import { TestEntity } from './models/TestEntity'
 import { TEST_CLIENT_CONSTANT } from './shared-client/constants/TEST_CLIENT_CONSTANT'
-import { IS_PRODUCTION_ENV } from './constants/IS_PRODUCTION_ENV'
 import { PORT } from './shared-server/constants/PORT'
-import { TestEntityC } from './shared-server/models/TestEntity'
 
 const app = express() // initialize express server
 if (!IS_PRODUCTION_ENV) // if in development environment allow cors from frontend dev origin 
