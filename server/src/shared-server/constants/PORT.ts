@@ -1,1 +1,1 @@
-export const PORT = 8000
+export const PORT = process.env.NODE_ENV === 'development' ? 8000 : process.env.PORT
