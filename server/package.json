@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "prestart": "cp -r ../client/src/shared-client/* ./src/shared-client",
+    "prestart": "mkdir -p ./src/shared-client; cp -r ../client/src/shared-client/* ./src/shared-client",
     "start": "NODE_ENV=development nodemon src/index.ts",
-    "prebuild": "cp -r ../client/src/shared-client/* ./src/shared-client",
+    "prebuild": "mkdir -p ./src/shared-client; cp -r ../client/src/shared-client/* ./src/shared-client",
     "postbuild": "cp package.json ./build/ && cd build && yarn install --production=true",
     "build": "tsc --project ./"
   },

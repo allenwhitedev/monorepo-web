@@ -25,9 +25,9 @@
     "@types/react-router-dom": "5.1.8"
   },
   "scripts": {
-    "prestart": "cp -r ../server/src/shared-server/* ./src/shared-server",
+    "prestart": "mkdir -p ./src/shared-server; cp -r ../server/src/shared-server/* ./src/shared-server",
     "start": "react-scripts start",
-    "prebuild": "cp -r ../server/src/shared-server/* ./src/shared-server",
+    "prebuild": "mkdir -p ./src/shared-server; cp -r ../server/src/shared-server/* ./src/shared-server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
