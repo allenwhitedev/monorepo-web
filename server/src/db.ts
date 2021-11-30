@@ -8,7 +8,7 @@ export const collections: { testEntities?: Collection<TestEntity> } = {}
 // - initialize mongo db client
 export async function connectToDatabase () {
 
-  const client: MongoClient = new MongoClient('mongodb://localhost:27017/monorepo');
+  const client: MongoClient = new MongoClient('mongodb://localhost:27017/yayornay');
           
   await client.connect();
       

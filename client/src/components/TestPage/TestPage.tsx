@@ -23,7 +23,7 @@ function TestPage() {
     <div className="App">
       <header className="App-header">
         <h3>Test backend fetch response:</h3>
-        <h4>Test Entities From Monorepo database:</h4>
+        <h4>Test Entities From 'yayornay' database:</h4>
         <ul className={styles.list}> 
           {testEntityListItems}
         </ul>
